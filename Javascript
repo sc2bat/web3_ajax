@@ -1,0 +1,2 @@
+<h2>JavaScript이란 무엇인가?</h2>
+<p>JavaScript (/ˈdʒɑːvəˌskrɪpt/)[9], often abbreviated as JS, ia programming language that conforms to the ECMAScripspecification.[10] JavaScript is high-level, often just-in-timcompiled, and multi-paradigm. It has curly-bracket syntaxdynamic typing, prototype-based object-orientation, and firsclass functions.</p>
