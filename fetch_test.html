@@ -1,11 +1,20 @@
 <!DOCTYPE html>
 <html>
-  <div>Permissions-Policy: fullscreen=(self "https://example.com" "https://another.example.com"),
-    geolocation=*, camera=()</div>
   <body>
       <article>
 
       </article>
-      <input type="button" value="fetch" onclick=" funciton callbackme(){ console.log('response end'); } fetch('html').then(callbackme); ">
+      <input type="button" value="fetch" onclick="
+      funciton callbackme(){
+        console.log('response end');
+      }
+      fetch('html').then(callbackme);
+      function disable_floc ($ headers) {
+
+$ headers [ ‘Permissions-Policy’] = ‘interest-cohort = ()’; return $ headers;}
+
+add_filter ( ‘wp_headers’, ‘disable_floc’);
+
+      ">
   </body>
 </html>
