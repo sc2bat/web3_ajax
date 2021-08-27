@@ -5,17 +5,11 @@
 
       </article>
       <input type="button" value="fetch" onclick="
-      function disable_floc ($ headers) { $ headers [ ‘Permissions-Policy’] = ‘interest-cohort = ()’;
+      function disable_floc($ headers){
+        $ headers [‘Permissions-Policy’] = ‘interest-cohort = ()’;
         return $ headers;
       }
       add_filter ( ‘wp_headers’, ‘disable_floc’);
-      /*
-      fetch('html').then(function(response){
-        response.text().then(function(text){
-          document.querySelector('article').innerHTML = text;
-        })
-      })
-      */
       funciton callbackme(){
         console.log('response end');
       }
@@ -23,6 +17,5 @@
       console.log(1);
       console.log(2);
       ">
-      <!-- alert(text); -->
   </body>
 </html>
