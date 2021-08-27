@@ -5,12 +5,7 @@
 
       </article>
       <input type="button" value="fetch" onclick="
-      function disable_floc($ headers){
-        $ headers [‘Permissions-Policy’] = ‘interest-cohort = ()’;
-        return $ headers;
-      }
-      add_filter ( ‘wp_headers’, ‘disable_floc’);
-      funciton callbackme(){
+      callbackme = funciton(){
         console.log('response end');
       }
       fetch('html').then(callbackme);
